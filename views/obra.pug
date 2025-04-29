@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .container
+    h1= obra.titulo
+    p Autor: #{obra.autor}
+    p Año: #{obra.año}
+    img(class="obra-imagen", src=obra.imagen, alt=obra.titulo)
+    p= obra.descripcion
